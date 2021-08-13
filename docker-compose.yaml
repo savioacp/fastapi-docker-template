@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+    app:
+        build: .
+        command: /start-reload.sh
+        ports:
+            - 3000:80
+        volumes:
+            - ./app:/app/app
